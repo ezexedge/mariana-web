@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+         <div class="col-md-12">
+             <h1 class="text-center mi-cv-titulo">Collecion</h1>
+         </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-12 d-flex flex-row flex-wrap justify-content-between">
+            <div  class="collecion-card my-5  col-lg-5 col-md-12">
+               <img src="https://concepto.de/wp-content/uploads/2014/03/modelo-e1551453273683.jpg" alt="">
+               <div class="contenido">
+                   <a href="#" id="galeria" >Collecion c 2012</a>
+               </div>
+                     
+            </div>
+
+        
+
+        
+           
+             
+         </div>
+       
+        </div>
+    </div>
+</div>
+
+<script>
+
+    $("#galeria").click(function(){
+        loadWithAnimation('../partials/galeria.html', pageGaleria)
+
+
+    })
+    var pageGaleria = function(){
+       
+    }
+
+    function loadWithAnimation (route, controller) {
+    $('#root').fadeOut(300, function () {
+      $('#root').load(route, controller).fadeIn(300)
+    })
+  }
+</script>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sobre mi</title>
+</head>
+<body >
+
+    <div id="nav-icon1">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <div class="menu-overlay  ">
+         
+        <ul>
+            
+          <li><a href="#">home</a></li>
+              <li><a href="#">about</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">portfolio</a></li>
+          <li><a href="#">contact</a></li>
+          
+      
+          
+        </ul>
+        
+      </div>
+    
+    <nav class="navbar fixed-top navbar-dark  bg-light">
+        <a class="navbar-brand text-danger" href="#!">Rosel Gallardo</a>
+
+        <ul>
+            <li><a href="#" id="home">sobre mi</a></li>
+            <li><a href="#" id="cv" >cv</a></li>
+            <li><a href="#" id="collecion">collecion</a></li>
+            <li><a href="#" id="contactame" >contactame</a></li>
+
+        </ul>
+      </nav>
+      
+
+    <main class="d-flex flex-wrap align-content-center" id="root">
+        
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.js"></script>
+
+<script src="./js/controller/pageHome.js"></script>
+<script src="./js/controller/pageCollecion.js"></script>
+<script src="./js/controller/pageContactame.js"></script>
+<script src="./js/controller/pageCv.js"></script>
+
+<script src="./js/index.js"></script>
+<script>
+
+var nav = document.querySelector("#nav-icon1");
+var icono = document.querySelector(".fa-bars")
+var menu = document.querySelector(".menu-overlay");
+nav.addEventListener("click", function() {
+  if(menu.classList.contains('active')){
+    menu.classList.remove('active')
+    icono.classList.remove('fa-times')
+    icono.classList.add('fa-bars')
+
+    
+  }else{
+    menu.classList.add('active')
+    icono.classList.remove('fa-bars')
+
+    icono.classList.add('fa-times')
+
+  }
+});
+
+</script>
+
+</body>
+</html>
