@@ -1,24 +1,42 @@
 $(document).ready(function () {
     loadWithAnimation('../partials/home.html',pageHome)
   
-    $('#home').click(function () {
+    $('.navbar #home').click(function () {
       loadWithAnimation('../partials/home.html', pageHome)
     })
-    $('#cv').click(function () {
+    $('.navbar #cv').click(function () {
         loadWithAnimation('../partials/cv.html', pageCv)
       })
 
-    $('#collecion').click(function () {
+    $('.navbar #collecion').click(function () {
       loadWithAnimation('../partials/collecion.html', pageCollecion)
     })
   
-    $('#contactame').click(function () {
+    $('.navbar #contactame').click(function () {
         loadWithAnimation('../partials/contactame.html', pageContactame)
       })
 
-      $('#galeria').click(function () {
+      $('.navbar #galeria').click(function () {
         loadWithAnimation('../partials/galeria.html', pageGaleria)
       })
+
+
+      $('#home-responsive').click(function () {
+        loadWithAnimation('../partials/home.html', pageHome)
+      })
+      $('#cv-responsive').click(function () {
+          loadWithAnimation('../partials/cv.html', pageCv)
+        })
+  
+      $('#collecion-responsive').click(function () {
+        loadWithAnimation('../partials/collecion.html', pageCollecion)
+      })
+    
+      $('#contactame-responsive').click(function () {
+          loadWithAnimation('../partials/contactame.html', pageContactame)
+        })
+  
+       
     
   })
   
