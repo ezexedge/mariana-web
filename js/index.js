@@ -23,7 +23,7 @@ $(document).ready(function () {
   })
   
   function loadWithAnimation (route, controller) {
-    $('#root').fadeOut(400, function () {
-      $('#root').load(route, controller).fadeIn(400)
+    $('#root').fadeOut(0, function () {
+      $('#root').load(route, controller).fadeIn(0)
     })
   }
